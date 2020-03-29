@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Public Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Private Source Files">
+      <UniqueIdentifier>{fa019b39-19dd-439b-902c-5008803ae940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private Source Files\Models">
+      <UniqueIdentifier>{8dd789c2-4879-4957-93c4-c69b37c896f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Source Files\Models">
+      <UniqueIdentifier>{7a2567e6-8cda-4878-ada3-66323c1c7295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private Source Files\Raytracing">
+      <UniqueIdentifier>{b6d9103e-6479-4b9f-b10d-9c1495bbd54c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Source Files\Raytracing">
+      <UniqueIdentifier>{d950d1f4-2162-421b-a69c-ba10be450fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private Source Files\Light">
+      <UniqueIdentifier>{cfe74dbe-5d20-4144-80ea-c44e868d86bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private Source Files\Shaders">
+      <UniqueIdentifier>{5d503e25-a75f-47f4-9a57-22281d21a07f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Source Files\Lights">
+      <UniqueIdentifier>{625e5b46-3a29-4e2e-ae4f-7aa594b75929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Source Files\Shaders">
+      <UniqueIdentifier>{6bc026a4-1404-4e4a-8718-2428523c437e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public Source Files\Scene">
+      <UniqueIdentifier>{52be22d5-d163-4c30-ac15-2e520be70072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private Source Files\Scene">
+      <UniqueIdentifier>{b95b8c16-a2cf-4708-aa30-c287437192fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Light.h">
+      <Filter>Public Source Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\PointLight.h">
+      <Filter>Public Source Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\SpotLight.h">
+      <Filter>Public Source Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\SunLight.h">
+      <Filter>Public Source Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Shader.h">
+      <Filter>Public Source Files\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\PhongShader.h">
+      <Filter>Public Source Files\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\CheckerShader.h">
+      <Filter>Public Source Files\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Model.h">
+      <Filter>Public Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Mesh.h">
+      <Filter>Public Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\HitResult.h">
+      <Filter>Public Source Files\Raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Plane.h">
+      <Filter>Public Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Ray.h">
+      <Filter>Public Source Files\Raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Scene.h">
+      <Filter>Public Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Sphere.h">
+      <Filter>Public Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\SceneImporter.h">
+      <Filter>Public Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Camera.h">
+      <Filter>Public Source Files\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\HitResult.cpp">
+      <Filter>Private Source Files\Raytracing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CheckerShader.cpp">
+      <Filter>Private Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Light.cpp">
+      <Filter>Private Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>Private Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model.cpp">
+      <Filter>Private Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhongShader.cpp">
+      <Filter>Private Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plane.cpp">
+      <Filter>Private Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PointLight.cpp">
+      <Filter>Private Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ray.cpp">
+      <Filter>Private Source Files\Raytracing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>Private Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cpp">
+      <Filter>Private Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpotLight.cpp">
+      <Filter>Private Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SunLight.cpp">
+      <Filter>Private Source Files\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sphere.cpp">
+      <Filter>Private Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneImporter.cpp">
+      <Filter>Private Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>Private Source Files\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

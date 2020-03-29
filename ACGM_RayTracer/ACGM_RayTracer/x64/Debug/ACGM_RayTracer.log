@@ -1,0 +1,11 @@
+﻿  main.cpp
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  RayTracerGadget.cpp
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  RayTracerResource.cpp
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  ACGM_RayTracer.vcxproj -> D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\x64\Debug\ACGM_RayTracer.exe
