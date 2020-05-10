@@ -13,7 +13,7 @@ namespace acgm
     //! Sphere destructor
     virtual ~Sphere() = default;
     //! Calculate intersection with ray
-    std::optional<HitResult> Intersect(const acgm::Ray& ray) const override;
+    std::optional<HitResult> Intersect(const acgm::Ray& ray) override;
     //! Get sphere position
     const glm::vec3 &GetPosition() const;
     //! Get sphere radius

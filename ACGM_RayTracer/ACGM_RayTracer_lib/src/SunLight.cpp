@@ -5,17 +5,17 @@ acgm::SunLight::SunLight(float intensity, glm::vec3 direction)
 {
 }
 
-float acgm::SunLight::GetIntensityAt(const glm::vec3& point) const
+float acgm::SunLight::GetIntensityAt(const glm::vec3& point)
 {
 	return intensity_;
 }
 
-glm::vec3 acgm::SunLight::GetDirectionToLight(const glm::vec3& point) const
+glm::vec3 acgm::SunLight::GetDirectionToLight(const glm::vec3& point)
 {
 	return -direction_;
 }
 
-float acgm::SunLight::GetDistanceTo(const glm::vec3& point) const
+float acgm::SunLight::GetDistanceTo(const glm::vec3& point)
 {
 	return INFINITY;
 }

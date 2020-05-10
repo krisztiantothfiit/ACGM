@@ -15,11 +15,11 @@ namespace acgm
         //! SpotLight destructor
         virtual ~SpotLight() = default;
         //! Get direction to SpotLight at a specific point
-        glm::vec3 GetDirectionToLight(const glm::vec3& point) const override;
+        glm::vec3 GetDirectionToLight(const glm::vec3& point) override;
         //! Get SpotLight intensity at a specific point
-        float GetIntensityAt(const glm::vec3& point) const override;
+        float GetIntensityAt(const glm::vec3& point) override;
         //! Get SpotLight distance to a specific point
-        float GetDistanceTo(const glm::vec3& point) const override;
+        float GetDistanceTo(const glm::vec3& point) override;
 
     private:
         //! Intensity of the light

@@ -21,3 +21,5 @@
 
 #include <ACGM_RayTracer_lib/PhongShader.h>
 #include <ACGM_RayTracer_lib/CheckerShader.h>
+
+#include <ACGM_RayTracer_lib/Image.h>

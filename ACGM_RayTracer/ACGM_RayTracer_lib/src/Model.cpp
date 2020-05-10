@@ -4,11 +4,6 @@ acgm::Model::Model()
 {
 }
 
-std::optional<acgm::HitResult> acgm::Model::Intersect(const acgm::Ray& ray) const
-{
-    return std::nullopt;
-}
-
 std::shared_ptr<acgm::Shader> acgm::Model::GetShader() const
 {
     return shader_;

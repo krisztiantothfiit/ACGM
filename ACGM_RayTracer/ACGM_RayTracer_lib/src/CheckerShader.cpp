@@ -5,10 +5,9 @@ acgm::CheckerShader::CheckerShader(float cube_size, const std::shared_ptr<acgm::
 {
 }
 
-const cogs::Color3f acgm::CheckerShader::CalculateColor(const ShaderInput& input) const
+const ShaderOutput acgm::CheckerShader::CalculateColor(const ShaderInput& input)
 {
-    float bias = 0.1;
-    int cube = ((int)floor(input.point.x / cube_size_ + bias) + (int)floor(input.point.y / cube_size_ + bias) + (int)floor(input.point.z / cube_size_ + bias)) % 2;
+    int cube = ((int)floor(input.point.x / cube_size_ + input.bias) + (int)floor(input.point.y / cube_size_ + input. bias) + (int)floor(input.point.z / cube_size_ + input.bias)) % 2;
     if (cube == 0) {
         return shader0_->CalculateColor(input);
     }

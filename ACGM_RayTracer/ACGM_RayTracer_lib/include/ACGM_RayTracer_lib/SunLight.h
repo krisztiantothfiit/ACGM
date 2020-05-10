@@ -15,11 +15,11 @@ namespace acgm
         //! SunLight destructor
         virtual ~SunLight() = default;
         //! Get SunLight intensity at a specific point
-        float GetIntensityAt(const glm::vec3& point) const override;
+        float GetIntensityAt(const glm::vec3& point) override;
         //! Get direction to SunLight at a specific point
-        glm::vec3 GetDirectionToLight(const glm::vec3& point) const override;
+        glm::vec3 GetDirectionToLight(const glm::vec3& point) override;
         //! Get SunLight distance to a specific point
-        float GetDistanceTo(const glm::vec3& point) const override;
+        float GetDistanceTo(const glm::vec3& point) override;
 
     private:
         //! SunLight intensity

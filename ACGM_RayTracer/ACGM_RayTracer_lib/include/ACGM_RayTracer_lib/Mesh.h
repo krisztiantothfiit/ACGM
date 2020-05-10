@@ -17,7 +17,7 @@ namespace acgm
         //! Plane destructor
         virtual ~Mesh() = default;
         //! Calculate instersecion with Ray
-        std::optional<HitResult> Intersect(const acgm::Ray& ray) const override;
+        std::optional<HitResult> Intersect(const acgm::Ray& ray) override;
 
     private:
     };

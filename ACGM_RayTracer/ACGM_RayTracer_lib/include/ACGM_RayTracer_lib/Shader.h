@@ -10,7 +10,16 @@ struct ShaderInput
     glm::vec3 direction_to_eye;
     glm::vec3 direction_to_light;
     float light_intensity;
+    float bias;
     bool is_point_in_shadow;
+};
+
+struct ShaderOutput
+{
+    cogs::Color3f color;
+    float glossiness;
+    float transparency;
+    float refractive_index;
 };
 
 namespace acgm
@@ -24,7 +33,7 @@ namespace acgm
         //! Shader destructor
         virtual ~Shader() = default;
         //! Calculate shader color - abstract
-        virtual const cogs::Color3f CalculateColor(const ShaderInput &input) const;
+        virtual const ShaderOutput CalculateColor(const ShaderInput &input) = 0;
 
     private: 
     };

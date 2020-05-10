@@ -1,7 +1,7 @@
 #include <ACGM_RayTracer_lib/Plane.h>
 
 acgm::Plane::Plane(const glm::vec3 &position, const glm::vec3 &normal)
-	: position_(position), normal_(-normal)
+	: position_(position), normal_(normal)
 {
 	color_ = cogs::color::WHITE;
 }
@@ -26,13 +26,13 @@ void acgm::Plane::SetColor(const cogs::Color3f& color)
 	color_ = color;
 }
 
-std::optional<acgm::HitResult> acgm::Plane::Intersect(const acgm::Ray& ray) const
+std::optional<acgm::HitResult> acgm::Plane::Intersect(const acgm::Ray& ray)
 {
 	glm::vec3 diff = position_ - ray.GetOrigin();
 	float prod1 = glm::dot(diff, normal_);
 	float prod2 = glm::dot(ray.GetDirection(), normal_);
 
-	if (prod2 == 0) {
+	if (glm::epsilonEqual<float>(prod2, 0, glm::epsilon<float>())) {
 		return std::nullopt;
 	}
 
@@ -45,6 +45,6 @@ std::optional<acgm::HitResult> acgm::Plane::Intersect(const acgm::Ray& ray) cons
 
 	HitResult hit;
 	hit.SetRayParam(t);
-	hit.SetRayNormal(-glm::normalize(normal_));
+	hit.SetRayNormal(normal_);
 	return hit;
 }

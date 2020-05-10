@@ -15,7 +15,7 @@ namespace acgm
         //! CheckerShader destructor
         virtual ~CheckerShader() = default;
         //! Calculate shader color
-        const cogs::Color3f CalculateColor(const ShaderInput& input) const override;
+        const ShaderOutput CalculateColor(const ShaderInput& input) override;
 
     private:
         //! Size of the cube

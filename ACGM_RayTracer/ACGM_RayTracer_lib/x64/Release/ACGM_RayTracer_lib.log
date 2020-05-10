@@ -1,46 +1,44 @@
 ﻿  Camera.cpp
   CheckerShader.cpp
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\CheckerShader.cpp(10,21): warning C4305: 'initializing': truncation from 'double' to 'float'
   HitResult.cpp
+  Image.cpp
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Image.cpp(19,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Image.cpp(20,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Light.cpp
   Mesh.cpp
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Mesh.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Mesh.cpp(20,23): warning C4018: '<': signed/unsigned mismatch
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Mesh.cpp(36,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Model.cpp
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   PhongShader.cpp
   Plane.cpp
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   PointLight.cpp
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\PointLight.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Ray.cpp
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Scene.cpp
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\SunLight.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\PointLight.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\SpotLight.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Mesh.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Scene.cpp(31,21): warning C4018: '<': signed/unsigned mismatch
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Scene.cpp(34,25): warning C4018: '<': signed/unsigned mismatch
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Scene.cpp(107,23): warning C4018: '<': signed/unsigned mismatch
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Scene.cpp(108,27): warning C4018: '<': signed/unsigned mismatch
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Scene.cpp(40,21): warning C4018: '<': signed/unsigned mismatch
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\Scene.cpp(43,25): warning C4018: '<': signed/unsigned mismatch
   SceneImporter.cpp
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Mesh.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\SunLight.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\PointLight.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\SpotLight.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(76,24): warning C4267: 'argument': conversion from 'size_t' to 'glm::mat<4,4,float,0>::length_type', possible loss of data
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(76,39): warning C4267: 'argument': conversion from 'size_t' to 'glm::mat<4,4,float,0>::length_type', possible loss of data
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(76,54): warning C4267: 'argument': conversion from 'size_t' to 'glm::mat<4,4,float,0>::length_type', possible loss of data
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(76,69): warning C4267: 'argument': conversion from 'size_t' to 'glm::mat<4,4,float,0>::length_type', possible loss of data
-D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(108,55): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(77,24): warning C4267: 'argument': conversion from 'size_t' to 'glm::mat<4,4,float,0>::length_type', possible loss of data
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(77,39): warning C4267: 'argument': conversion from 'size_t' to 'glm::mat<4,4,float,0>::length_type', possible loss of data
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(77,54): warning C4267: 'argument': conversion from 'size_t' to 'glm::mat<4,4,float,0>::length_type', possible loss of data
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(77,69): warning C4267: 'argument': conversion from 'size_t' to 'glm::mat<4,4,float,0>::length_type', possible loss of data
+D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\src\SceneImporter.cpp(109,55): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=glm::uint

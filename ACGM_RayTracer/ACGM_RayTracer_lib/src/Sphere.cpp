@@ -9,7 +9,7 @@ acgm::Sphere::Sphere(const glm::vec3 &position, float radius)
 {
 }
 
-std::optional<acgm::HitResult> acgm::Sphere::Intersect(const acgm::Ray &ray) const
+std::optional<acgm::HitResult> acgm::Sphere::Intersect(const acgm::Ray &ray)
 {
   glm::vec3 oo = ray.GetOrigin() - position_;
 
@@ -45,8 +45,8 @@ std::optional<acgm::HitResult> acgm::Sphere::Intersect(const acgm::Ray &ray) con
 
   HitResult hit;
   hit.SetRayParam(t);
-  glm::vec3 intersectionPoint = ray.GetPoint(t);
-  hit.SetRayNormal(glm::normalize(intersectionPoint - position_));
+  auto normal = glm::normalize(ray.GetPoint(t) - position_);
+  hit.SetRayNormal(normal);
   return hit;
 }
 

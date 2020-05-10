@@ -15,11 +15,11 @@ namespace acgm
         //! PointLight destructor
         virtual ~PointLight() = default;
         //! Get direction to PointLight at a specific point
-        glm::vec3 GetDirectionToLight(const glm::vec3& point) const override;
+        glm::vec3 GetDirectionToLight(const glm::vec3& point) override;
         //! Get PointLight intensity at a specific point
-        float GetIntensityAt(const glm::vec3& point) const override;
+        float GetIntensityAt(const glm::vec3& point) override;
         //! Get PointLight distance to a specific point
-        float GetDistanceTo(const glm::vec3& point) const override;
+        float GetDistanceTo(const glm::vec3& point) override;
 
     private:
         //! Intensity of the light

@@ -12,11 +12,11 @@ namespace acgm
         //! Light destructor
         virtual ~Light() = default;
         //! Get direction vector to the light - abstract
-        virtual glm::vec3 GetDirectionToLight(const glm::vec3& point) const;
+        virtual glm::vec3 GetDirectionToLight(const glm::vec3& point) = 0;
         //! Get intensity at a specific point - abstract
-        virtual float GetIntensityAt(const glm::vec3& point) const;
+        virtual float GetIntensityAt(const glm::vec3& point) = 0;
         //! Get distance to a specific point - abstract
-        virtual float GetDistanceTo(const glm::vec3& point) const;
+        virtual float GetDistanceTo(const glm::vec3& point) = 0;
 
     private:
     };

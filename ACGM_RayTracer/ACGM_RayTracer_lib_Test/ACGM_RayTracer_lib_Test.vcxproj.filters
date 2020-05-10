@@ -5,6 +5,9 @@
     <ClCompile Include="IntersectionTests.cpp" />
     <ClCompile Include="LightTests.cpp" />
     <ClCompile Include="ShaderTests.cpp" />
+    <ClCompile Include="ReflectionTests.cpp" />
+    <ClCompile Include="RefractionTests.cpp" />
+    <ClCompile Include="EnvironmentTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

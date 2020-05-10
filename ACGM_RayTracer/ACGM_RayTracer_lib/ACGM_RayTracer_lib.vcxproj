@@ -22,9 +22,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\krist\Desktop\stb_image_write.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\Camera.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\CheckerShader.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\HitResult.h" />
+    <ClInclude Include="include\ACGM_RayTracer_lib\Image.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\Light.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\Mesh.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\Model.h" />
@@ -37,12 +39,14 @@
     <ClInclude Include="include\ACGM_RayTracer_lib\Shader.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\Sphere.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\SpotLight.h" />
+    <ClInclude Include="include\ACGM_RayTracer_lib\stb_image.h" />
     <ClInclude Include="include\ACGM_RayTracer_lib\SunLight.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\CheckerShader.cpp" />
     <ClCompile Include="src\HitResult.cpp" />
+    <ClCompile Include="src\Image.cpp" />
     <ClCompile Include="src\Light.cpp" />
     <ClCompile Include="src\Mesh.cpp" />
     <ClCompile Include="src\Model.cpp" />

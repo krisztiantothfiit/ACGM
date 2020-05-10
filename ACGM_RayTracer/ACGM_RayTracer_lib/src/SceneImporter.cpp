@@ -10,6 +10,7 @@
 #include <ACGM_RayTracer_lib/SunLight.h>
 #include <ACGM_RayTracer_lib/PointLight.h>
 #include <ACGM_RayTracer_lib/SpotLight.h>
+#include <ACGM_RayTracer_lib/Image.h>
 
 const int acgm::SceneImporter::MODELTYPE_PLANE = 20;
 const int acgm::SceneImporter::MODELTYPE_SPHERE = 21;
@@ -168,8 +169,11 @@ std::shared_ptr<acgm::Shader> acgm::SceneImporter::ReadShader()
     const auto ambient = ReadFloat();
     const auto diffuse = ReadFloat();
     const auto specular = ReadFloat();
+    const auto glossiness = ReadFloat();
+    const auto transparency = ReadFloat();
+    const auto refractive_index = ReadFloat();
     GetLine();
-    shader = std::make_shared<acgm::PhongShader>(color, shininess, ambient, diffuse, specular);
+    shader = std::make_shared<acgm::PhongShader>(color, shininess, ambient, diffuse, specular, glossiness, transparency, refractive_index);
   }
   if (shader_type == SHADERTYPE_CHECKER)
   {
@@ -219,11 +223,17 @@ std::shared_ptr<acgm::Light> acgm::SceneImporter::ReadLight()
 
 std::shared_ptr<acgm::Scene> acgm::SceneImporter::ReadScene()
 {
+  const auto bias = ReadFloat();
+  const auto index_of_refraction = ReadFloat();
+  const auto enviro_up = ReadVec3();
+  const auto enviro_seam = ReadVec3();
+  auto enviro_image_file = GetLine();
+  std_ext::Trim(enviro_image_file);
   const auto camera = ReadCamera();
   const auto light = ReadLight();
   const auto models = ReadModels();
 
   std::shared_ptr<acgm::Scene> scene;
-  scene = std::make_shared<acgm::Scene>(camera, light, models);
+  scene = std::make_shared<acgm::Scene>(camera, light, models, enviro_image_file, enviro_up, enviro_seam, bias, index_of_refraction);
   return scene;
 }

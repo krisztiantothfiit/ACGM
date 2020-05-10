@@ -1,1 +1,5 @@
-﻿  ACGM_RayTracer_lib_Test.vcxproj -> D:\Workspaces\PMPG\ACGM_RayTracer\x64\Debug\ACGM_RayTracer_lib_Test.exe
+﻿  EnvironmentTests.cpp
+D:\Workspaces\PMPG\ACGM_RayTracer\ACGM_RayTracer_lib_Test\EnvironmentTests.cpp(6,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Workspaces\PMPG\ACGM_RayTracer\ACGM_RayTracer_lib_Test\EnvironmentTests.cpp(7,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Workspaces\PMPG\ACGM_RayTracer\ACGM_RayTracer_lib_Test\EnvironmentTests.cpp(9,5): warning C4305: 'argument': truncation from 'double' to 'float'
+  ACGM_RayTracer_lib_Test.vcxproj -> D:\Workspaces\PMPG\ACGM_RayTracer\x64\Debug\ACGM_RayTracer_lib_Test.exe

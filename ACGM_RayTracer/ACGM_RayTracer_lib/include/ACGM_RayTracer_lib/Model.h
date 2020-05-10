@@ -16,7 +16,7 @@ namespace acgm
     //! Model constructor
     virtual ~Model() = default;
     //! Model intersection with ray - abstract
-    virtual std::optional<HitResult> Intersect(const acgm::Ray& ray) const;
+    virtual std::optional<HitResult> Intersect(const acgm::Ray& ray) = 0;
     //! Get Model shader
     std::shared_ptr<acgm::Shader> GetShader() const;
     //! Set Model shader

@@ -5,21 +5,21 @@ acgm::PointLight::PointLight(float intensity, glm::vec3 position, float range, f
 {
 }
 
-glm::vec3 acgm::PointLight::GetDirectionToLight(const glm::vec3& point) const
+glm::vec3 acgm::PointLight::GetDirectionToLight(const glm::vec3& point)
 {
 	return glm::normalize(position_ - point);
 }
 
-float acgm::PointLight::GetIntensityAt(const glm::vec3& point) const
+float acgm::PointLight::GetIntensityAt(const glm::vec3& point)
 {
-	float d = hypot(hypot(position_.x - point.x, position_.y - point.y), position_.z - point.z);
+	float d = glm::distance(position_, point);
 	float l = range_ / (range_ + d * linear_attenuation_);
 	float q = pow(range_, 2) / (pow(range_, 2) + pow(d, 2) * quadratic_attenuation_);
 
 	return l * q * intensity_;
 }
 
-float acgm::PointLight::GetDistanceTo(const glm::vec3& point) const
+float acgm::PointLight::GetDistanceTo(const glm::vec3& point)
 {
 	return hypot(hypot(position_.x - point.x, position_.y - point.y), position_.z - point.z);
 }

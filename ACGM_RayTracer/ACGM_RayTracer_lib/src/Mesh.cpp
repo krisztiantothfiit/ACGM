@@ -9,7 +9,7 @@ acgm::Mesh::Mesh(std::string file_name, glm::mat4 transform)
     mesh.points->Transform(transform);
 }
 
-std::optional<acgm::HitResult> acgm::Mesh::Intersect(const acgm::Ray& ray) const
+std::optional<acgm::HitResult> acgm::Mesh::Intersect(const acgm::Ray& ray)
 {
     float t = -INFINITY;
     float minT = INFINITY;
@@ -17,7 +17,7 @@ std::optional<acgm::HitResult> acgm::Mesh::Intersect(const acgm::Ray& ray) const
     glm::vec3 v0v2;
     glm::vec3 v0v1Min;
     glm::vec3 v0v2Min;
-    for (int i = 0; i < mesh.faces->GetFaceCount(); i++) {
+    for (unsigned int i = 0; i < mesh.faces->GetFaceCount(); i++) {
         glm::vec3 face = mesh.faces->GetFaces().at(i);
         glm::vec3 v0 = mesh.points->GetPositions()[(int)face.x];
         glm::vec3 v1 = mesh.points->GetPositions()[(int)face.y];
@@ -30,10 +30,10 @@ std::optional<acgm::HitResult> acgm::Mesh::Intersect(const acgm::Ray& ray) const
 
         float det = glm::dot(v0v1, pvec);
 
-        if (det < 0.000001)
+        if (fabs(det) < std::numeric_limits<float>().epsilon())
             continue;
 
-        float invDet = 1.0 / det;
+        float invDet = 1.0f / det;
 
         glm::vec3 tvec = ray.GetOrigin() - v0;
 

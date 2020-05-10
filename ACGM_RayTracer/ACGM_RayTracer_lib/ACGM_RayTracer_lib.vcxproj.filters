@@ -38,6 +38,9 @@
     <Filter Include="Private Source Files\Scene">
       <UniqueIdentifier>{b95b8c16-a2cf-4708-aa30-c287437192fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="stb_image">
+      <UniqueIdentifier>{2512edb0-e5b3-470e-988f-e8f9a5f2354b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -91,6 +94,15 @@
     <ClInclude Include="include\ACGM_RayTracer_lib\Camera.h">
       <Filter>Public Source Files\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\Image.h">
+      <Filter>Public Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ACGM_RayTracer_lib\stb_image.h">
+      <Filter>stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\krist\Desktop\stb_image_write.h">
+      <Filter>stb_image</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\HitResult.cpp">
@@ -139,6 +151,9 @@
       <Filter>Private Source Files\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\Camera.cpp">
+      <Filter>Private Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Image.cpp">
       <Filter>Private Source Files\Scene</Filter>
     </ClCompile>
   </ItemGroup>

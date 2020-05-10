@@ -3,6 +3,7 @@
 #include <ACGM_RayTracer_lib/Model.h>
 #include <ACGM_RayTracer_lib/HitResult.h>
 #include <ACGM_RayTracer_lib/Ray.h>
+#include <glm/gtc/epsilon.hpp>
 #include "glm/glm.hpp";
 
 
@@ -25,7 +26,7 @@ namespace acgm
       //! Set plane color
       void SetColor(const cogs::Color3f& color);
       //! Calculate intersection with ray
-      std::optional<HitResult> Intersect(const acgm::Ray& ray) const override;
+      std::optional<HitResult> Intersect(const acgm::Ray& ray) override;
      
   private:
       //! Position in the scene
