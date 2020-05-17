@@ -24,3 +24,15 @@ cogs::Color3f acgm::Image::GetColorAt(const glm::vec2& uvs) const
 
     return cogs::Color3f(r/255, g/255, b/255);
 }
+
+glm::vec2 acgm::Image::CalculateUVCoordinates(acgm::Ray& ray, const glm::vec3& enviro_up, const glm::vec3& enviro_seam) const
+{
+    float dot_product = glm::dot(ray.GetDirection(), enviro_up);
+    float latitude = std::acos(dot_product);
+    float longitude = glm::orientedAngle(glm::normalize(ray.GetDirection() - dot_product * enviro_up), enviro_seam, enviro_up);
+
+    float uv_x = (latitude - 0) / (glm::pi<float>() - 0);
+    float uv_y = (longitude + glm::pi<float>()) / (glm::pi<float>() + glm::pi<float>());
+	
+    return glm::vec2(uv_x, uv_y);
+}

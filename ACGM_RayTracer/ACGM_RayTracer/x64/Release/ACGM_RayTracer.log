@@ -8,8 +8,8 @@ D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_Ra
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Ray.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\ACGM_RayTracer_lib\include\ACGM_RayTracer_lib\Plane.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Generating code
-  1756 of 1769 functions (99.3%) were compiled, the rest were copied from previous compilation.
-    567 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+  14 of 1770 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    15 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   ACGM_RayTracer.vcxproj -> D:\Workspaces\PMPG\ACGM-1\ACGM\ACGM_RayTracer\x64\Release\ACGM_RayTracer.exe

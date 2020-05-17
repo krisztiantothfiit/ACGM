@@ -31,7 +31,7 @@ void acgm::Ray::SetBias(const float bias)
 	bias_ = bias;
 }
 
-acgm::Ray acgm::Ray::CreateReflectionRay(glm::vec3 dir, glm::vec3 normal, glm::vec3 intersectionPoint) const
+acgm::Ray acgm::Ray::CreateReflectionRay(glm::vec3& dir, glm::vec3& normal, glm::vec3& intersectionPoint) const
 {
     // Construction of reflection ray
     glm::vec3 reflectionRayDirection = dir - 2 * glm::dot(dir, normal) * normal;
@@ -43,7 +43,7 @@ acgm::Ray acgm::Ray::CreateReflectionRay(glm::vec3 dir, glm::vec3 normal, glm::v
     return reflectionRay;
 }
 
-std::optional<acgm::Ray> acgm::Ray::CreateRefractionRay(bool inside, float refractive_index, float index_of_refraction, glm::vec3 dir, glm::vec3 normal, glm::vec3 intersectionPoint) const
+std::optional<acgm::Ray> acgm::Ray::CreateRefractionRay(bool inside, float refractive_index, float index_of_refraction, glm::vec3& dir, glm::vec3& normal, glm::vec3& intersectionPoint) const
 {
     float n, n1, n2;
 

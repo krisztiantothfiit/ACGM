@@ -161,14 +161,7 @@ cogs::Color3f acgm::Scene::Trace(Ray ray, int currentReflectionDepth, const int 
     // If intersection was not found
     else {
         if (image_) {
-            float dot_product = glm::dot(ray.GetDirection(), enviro_up_);
-            float latitude = std::acos(dot_product);
-            float longitude = glm::orientedAngle(glm::normalize(ray.GetDirection() - dot_product * enviro_up_), enviro_seam_, enviro_up_);
-
-            float uv_x = (latitude - 0) / (glm::pi<float>() - 0);
-            float uv_y = (longitude + glm::pi<float>()) / (glm::pi<float>() + glm::pi<float>());
-
-            return image_->GetColorAt(glm::vec2(uv_x, uv_y));
+            return image_->GetColorAt(image_->CalculateUVCoordinates(ray, enviro_up_, enviro_seam_));
         }
         else {
             return cogs::color::BLACK;

@@ -23,9 +23,9 @@ namespace acgm
       //! Set Ray bias
       void SetBias(const float bias);
       //! Create reflection ray
-      acgm::Ray CreateReflectionRay(glm::vec3 dir, glm::vec3 normal, glm::vec3 intersectionPoint) const;
+      acgm::Ray CreateReflectionRay(glm::vec3& dir, glm::vec3& normal, glm::vec3& intersectionPoint) const;
       //! Create refraction ray
-      std::optional<acgm::Ray> CreateRefractionRay(bool inside, float refractive_index, float index_of_refraction, glm::vec3 dir, glm::vec3 normal, glm::vec3 intersectionPoint) const;
+      std::optional<acgm::Ray> CreateRefractionRay(bool inside, float refractive_index, float index_of_refraction, glm::vec3& dir, glm::vec3& normal, glm::vec3& intersectionPoint) const;
 
 
   private:
